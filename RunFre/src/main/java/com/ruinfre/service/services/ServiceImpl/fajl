@@ -1,0 +1,24 @@
+@Override
+    public Integer avgSumaUplata(Long id) {
+       int sum = 0;
+       Optional<Student> student = studentRepository.findById(id);
+       List<Ulata> uplata = student.get().getListaUplata();
+       for(int i=0;i < uplata.size(); i++){
+        sum += uplata.get().getUplata(i);
+       }
+       return sum;
+
+    }
+
+    @Override
+    public Double calcAvgGrade(Long id) {
+        int sum = 0;
+        int br = 0;
+        Optional<Student> student = studentRepository.findById(id);
+        List<Ocena> ocena = student.get().getListaOcena();
+        for(int i=0;i < ocena.size(); i++){
+             sum += ocena.get().getOcena(i);
+             br++;
+         }
+        return sum/br;
+    }

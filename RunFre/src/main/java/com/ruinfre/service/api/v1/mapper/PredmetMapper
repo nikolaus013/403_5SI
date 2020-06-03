@@ -1,0 +1,16 @@
+package com.ruinfre.service.api.v1.mapper;
+
+
+import com.ruinfre.service.api.v1.model.PredmetDTO;
+import com.ruinfre.service.domain.Predmet;
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
+
+@Mapper
+public interface PredmetMapper {
+
+    PredmetMapper instance = Mappers.getMapper(PredmetMapper.class);
+
+    PredmetDTO fakultettoFakultetDto(Predmet predmet);
+
+}

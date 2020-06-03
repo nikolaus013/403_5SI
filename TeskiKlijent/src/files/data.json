@@ -1,0 +1,20 @@
+[
+  {
+    "columns" : ["name", "surname", "age"]
+  },
+  {
+    "name" : "Mila",
+    "surname": "Bajic",
+    "age" : 22
+  },
+  {
+    "name" : "Ana",
+    "surname": "Markovic",
+    "age" : 23
+  },
+  {
+    "name" : "Anja",
+    "surname": "Softic",
+    "age" : 17
+  }
+]
